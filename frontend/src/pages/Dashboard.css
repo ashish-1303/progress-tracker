@@ -1,0 +1,138 @@
+/* ===== Page Wrapper ===== */
+.dashboard {
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ===== Card ===== */
+.dashboard-container {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== Header ===== */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+/* ===== Title ===== */
+.dashboard-header h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+/* ===== Button Group ===== */
+.dashboard-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ===== Progress Button ===== */
+.progress-btn {
+  padding: 8px 14px;
+  background: #22c55e;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.progress-btn:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+
+/* ===== Logout Button ===== */
+.logout-btn {
+  padding: 8px 14px;
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.logout-btn:active {
+  transform: scale(0.97);
+}
+
+/* ===== Section Cards ===== */
+.dashboard-section {
+  background: #f8fafc;
+  padding: 18px 20px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  border-left: 5px solid #667eea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 22px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dashboard-actions {
+    justify-content: center;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .dashboard-actions {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .progress-btn,
+  .logout-btn {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,73 @@
+.work-list {
+  margin-top: 20px;
+}
+
+.work-list h3 {
+  margin-bottom: 12px;
+  color: #1e293b;
+  text-align: center;
+}
+
+.work-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s;
+}
+
+/* Completed items style */
+.work-item.completed span {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* .work-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+} */
+
+.work-item button 
+{
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Complete button style */
+.complete-btn {
+  background: #22c55e;
+  color: #fff;
+}
+.complete-btn:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+.complete-btn:active {
+  transform: scale(0.97);
+}
+
+/* Undo button style */
+.undo-btn {
+  background: #f59e0b;
+  color: #fff;
+}
+.undo-btn:hover {
+  background: #d97706;
+  transform: translateY(-1px);
+}
+.undo-btn:active {
+  transform: scale(0.97);
+}

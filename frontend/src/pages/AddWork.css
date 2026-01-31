@@ -1,0 +1,46 @@
+.add-work h3 
+{
+  margin-bottom: 12px;
+  color: #1e293b;
+  text-align: center;
+}
+
+.add-work form 
+{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-work input,
+.add-work select 
+{
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+}
+
+.add-work input:focus,
+.add-work select:focus 
+{
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.add-work button 
+{
+  padding: 10px 16px;
+  background: #667eea;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-work button:hover 
+{
+  background: #5a67d8;
+}

@@ -1,0 +1,150 @@
+/* ===== Page Wrapper ===== */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+/* ===== Card ===== */
+.auth-box {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 35px;
+  border-radius: 14px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== App Name ===== */
+.app-name {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+/* ===== Tagline ===== */
+.tagline {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* ===== Form ===== */
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Inputs ===== */
+.auth-box input {
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.auth-box input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.25);
+}
+
+/* ===== Password Field ===== */
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 42px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #64748b;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.eye-icon:hover {
+  color: #667eea;
+}
+
+/* ===== Button ===== */
+.auth-box button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-box button:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+.auth-box button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ===== Footer Text ===== */
+.auth-box p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.auth-box a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 28px 22px;
+  }
+
+  .app-name {
+    font-size: 1.7rem;
+  }
+}
