@@ -10,7 +10,12 @@ const marksRoutes = require('./routes/marksRoutes');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://student-progress-tracker-by-aashish.netlify.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 connectDB();
